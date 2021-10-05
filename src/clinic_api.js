@@ -9,7 +9,14 @@ class ClinicApi {
     getClinics(){
         fetch(this.port + `/clinics`)
         .then(response => response.json())
-        .then(data => console.log(data))
+        .then(data => {
+            for(const clinic of data["data"]){
+                debugger
+                let c = new Clinic(clinic)  // want to show this on the page
+                // make some method to put it on my DOM
+            } 
+        })
         //add a catch in case things get rejected to send a msg. to a user
+        .catch()
     }
 }
