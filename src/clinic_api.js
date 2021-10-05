@@ -10,5 +10,6 @@ class ClinicApi {
         fetch(this.port + `/clinics`)
         .then(response => response.json())
         .then(data => console.log(data))
+        //add a catch in case things get rejected to send a msg. to a user
     }
 }

@@ -5,4 +5,4 @@ const port = 'http://localhost:3000';
 const clinicCall = new ClinicApi(port);
 
 // taking clinicCall and calling getClinicss on it and then invoking it
-clinicCall.getComments()
+clinicCall.getClinics()
